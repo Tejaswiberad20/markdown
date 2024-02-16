@@ -2,24 +2,69 @@
 <html>
 <head>
     <title>external css</title>
-    <link rel="stylesheet" href="style.css"/>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .head{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        .f1{
+            background-color: #fff;
+            height: 600px;
+            width: 550px;
+            margin-left: 30%;
+            box-shadow:0 0 2px 3px gray;
+            border-radius: 50px 5px 50px 5px;
+        }
+        .text{
+            position: relative;
+            text-align: center;
+            font-size: 30px;
+        }
+        .box{
+            text-align: center; 
+            margin-left: 100px;  
+            font-size: 30px;         
+        }
+        .submit{
+            background-color: red;
+            padding: 10px 20px;
+            box-shadow: red;
+            border: none;
+            margin-left: 35%;
+            border-radius: 50px;
+            color:#fff;
+            margin-top: 30px;
+        }
+        .reset{
+            background-color: rgb(0, 255, 34);
+            padding: 10px 20px;
+            box-shadow: rgb(5, 209, 39);
+            border: none;
+            border-radius: 50px;
+            color:#fff;
+        }
+        </style>
 </head>
-<body><center>
-    <h1>Registration Form</h1>
+<body>
+    <h1 class="head">Registration Form</h1>
     <div class="f1">
     <form class="form">
-        Enter Name:<br/>
-        <input type="text"name="name"/><br>
-        Enter Email ID:<br/>
-        <input type="text"name="name"/><br>
-        Enter Password:<br/>
-        <input type="password"name="password"/><br>
-        Conform Your Password:<br/>
-        <input type="password"name="password"/><br>
+        <p class="text">Enter Name:<br/></p>
+        <input type="text"name="name"class="box"/><br>
+        <p class="text">Enter Email ID:<br/></p>
+        <input type="text"name="name"class="box"><br>
+        <p class="text">Enter Password:<br/></p>
+        <input type="password"name="password"class="box"/><br>
+        <p class="text">Conform Your Password:<br/></p>
+        <input type="password"name="password"class="box"/><br>
         <input type="submit" name="submit" class="submit"> 
         <input type="submit" name="Reset" value="Reset" class="reset">
         </form>
         </div>
-        </center>
+        
 </body>
 </html>
